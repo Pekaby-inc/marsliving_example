@@ -13,8 +13,6 @@ r = requests.get(url)
 # Проверяем, что запрос прошел успешно
 if r.status_code != 200: exit('Didn\'t find')
 
-response = r.text
-
 # Записываем ответ формата JSON в переменную
 data = r.json()
 
